@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "NODE_OPTIONS='--max-old-space-size=4096' vite build",
-    "preview": "vite preview"
+    "build": "node ./node_modules/vite/bin/vite.js build",
+    "preview": "vite preview",
+    "postinstall": "chmod +x ./node_modules/.bin/* || true"
   },
   "engines": {
     "node": ">=18.0.0",
