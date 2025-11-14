@@ -188,6 +188,10 @@
 
 /* 태블릿 가로 (901px - 1200px) */
 @media (max-width: 1200px) and (min-width: 901px) {
+  .container {
+    padding-top: 90px; /* GNB 높이 + 추가 여백 */
+  }
+  
   .content {
     position: relative;
     left: auto;
@@ -221,6 +225,10 @@
 
 /* 태블릿 세로 (769px - 900px) */
 @media (max-width: 900px) and (min-width: 769px) {
+  .container {
+    padding-top: 80px; /* GNB 높이 + 추가 여백 */
+  }
+  
   .content {
     position: relative;
     left: auto;
@@ -258,6 +266,10 @@
 
 /* 모바일 가로 (481px - 768px) */
 @media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    padding-top: 70px; /* GNB 높이 + 추가 여백 */
+  }
+  
   .content {
     position: relative;
     left: auto;
@@ -295,6 +307,10 @@
 
 /* 모바일 세로 (320px - 480px) */
 @media (max-width: 480px) {
+  .container {
+    padding-top: 65px; /* GNB 높이 + 추가 여백 */
+  }
+  
   .content {
     position: relative;
     left: auto;
@@ -334,6 +350,10 @@
 
 /* 초소형 모바일 (320px 이하) */
 @media (max-width: 320px) {
+  .container {
+    padding-top: 60px; /* GNB 높이 + 추가 여백 */
+  }
+  
   .content {
     padding: 15px 12px;
     gap: 25px;
