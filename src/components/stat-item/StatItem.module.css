@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.title {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.value {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #FF7E00;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* 반응형 디자인 */
+/* 작은 데스크톱 (1201px - 1440px) */
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .title {
+    font-size: 42px;
+    color: #000000;
+  }
+  
+  .value {
+    font-size: 42px;
+    color: #FF7E00;
+  }
+}
+
+/* 태블릿 가로 (901px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .title {
+    font-size: 38px;
+    color: #000000;
+  }
+  
+  .value {
+    font-size: 38px;
+    color: #FF7E00;
+  }
+}
+
+/* 태블릿 세로 (769px - 900px) */
+@media (max-width: 900px) and (min-width: 769px) {
+  .title {
+    font-size: 32px;
+    color: #000000;
+  }
+  
+  .value {
+    font-size: 32px;
+    color: #FF7E00;
+  }
+  
+  .container {
+    gap: 16px;
+  }
+}
+
+/* 모바일 가로 (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .title {
+    font-size: 28px;
+    color: #000000;
+  }
+  
+  .value {
+    font-size: 28px;
+    color: #FF7E00;
+  }
+  
+  .container {
+    gap: 14px;
+  }
+}
+
+/* 모바일 세로 (320px - 480px) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+    line-height: 1.1em;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .value {
+    font-size: 28px;
+    line-height: 1.1em;
+    text-align: center;
+    color: #FF7E00;
+  }
+  
+  .container {
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .textContainer {
+    align-items: center;
+  }
+}
+
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
+  .title {
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .value {
+    font-size: 24px;
+    text-align: center;
+    color: #FF7E00;
+  }
+  
+  .container {
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .textContainer {
+    align-items: center;
+  }
+}

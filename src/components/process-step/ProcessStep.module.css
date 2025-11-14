@@ -1,0 +1,236 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+
+.stepHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.stepBadge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  background-color: #222222;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.stepNumber {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.45em;
+  letter-spacing: -3%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.stepTitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.625em;
+  letter-spacing: -3%;
+  text-align: center;
+  color: #222222;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.description {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57em;
+  letter-spacing: -4%;
+  text-align: center;
+  color: #222222;
+  max-width: 288px;
+}
+
+.mockupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.stepLine {
+  position: absolute;
+  left: 11px;
+  top: 37px;
+  width: 1px;
+  height: 275px;
+  background-color: #D1D1D1;
+  z-index: -1;
+}
+
+/* 반응형 디자인 */
+/* 작은 데스크톱 (1201px - 1440px) */
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .stepTitle {
+    font-size: 14px;
+  }
+  
+  .description {
+    font-size: 12px;
+    max-width: 250px;
+  }
+  
+  .stepLine {
+    height: 240px;
+  }
+}
+
+/* 태블릿 가로 (901px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .stepTitle {
+    font-size: 13px;
+  }
+  
+  .description {
+    font-size: 11px;
+    max-width: 220px;
+  }
+  
+  .stepLine {
+    height: 200px;
+  }
+}
+
+/* 태블릿 세로 (769px - 900px) */
+@media (max-width: 900px) and (min-width: 769px) {
+  .container {
+    gap: 25px;
+  }
+  
+  .stepBadge {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .stepNumber {
+    font-size: 9px;
+  }
+  
+  .stepTitle {
+    font-size: 12px;
+  }
+  
+  .description {
+    font-size: 10px;
+    max-width: 200px;
+  }
+  
+  .stepLine {
+    height: 180px;
+    left: 9px;
+    top: 32px;
+  }
+}
+
+/* 모바일 가로 (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    gap: 20px;
+  }
+  
+  .stepBadge {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .stepNumber {
+    font-size: 8px;
+  }
+  
+  .stepTitle {
+    font-size: 11px;
+  }
+  
+  .description {
+    font-size: 9px;
+    max-width: 180px;
+  }
+  
+  .stepLine {
+    height: 160px;
+    left: 8px;
+    top: 28px;
+  }
+}
+
+/* 모바일 세로 (320px - 480px) */
+@media (max-width: 480px) {
+  .container {
+    gap: 15px;
+  }
+  
+  .stepBadge {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .stepNumber {
+    font-size: 7px;
+  }
+  
+  .stepTitle {
+    font-size: 10px;
+  }
+  
+  .description {
+    font-size: 8px;
+    max-width: 160px;
+    line-height: 1.4em;
+  }
+  
+  .stepLine {
+    height: 140px;
+    left: 7px;
+    top: 24px;
+  }
+}
+
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
+  .stepBadge {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .stepNumber {
+    font-size: 6px;
+  }
+  
+  .stepTitle {
+    font-size: 9px;
+  }
+  
+  .description {
+    font-size: 7px;
+    max-width: 140px;
+  }
+  
+  .stepLine {
+    height: 120px;
+    left: 6px;
+    top: 20px;
+  }
+}

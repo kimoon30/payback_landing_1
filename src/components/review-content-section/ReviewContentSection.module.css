@@ -1,0 +1,444 @@
+.container {
+  width: 100%;
+  min-height: 1080px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 180px;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1560px;
+}
+
+.reviewArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  height: 750px;
+  background-color: #F3F3F3;
+  border-radius: 100px;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+}
+
+.reviewHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.sectionTitle {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.3em;
+  letter-spacing: -4%;
+  text-align: center;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.mockupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mockupImage {
+  width: 360px;
+  height: 545px;
+  object-fit: contain;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  width: 750px;
+  height: 748px;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 20px;
+}
+
+.subtitle {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  color: #F96874;
+  margin: 0;
+}
+
+.mainTitle {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #1A1A1A;
+  margin: 0;
+  width: 472px;
+}
+
+.description {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+}
+
+/* 반응형 디자인 */
+/* 초대형 화면 (2560px 이상) */
+@media (min-width: 2560px) {
+  .content {
+    gap: 100px;
+    max-width: 2000px;
+  }
+}
+
+/* 대형 화면 (1920px - 2559px) */
+@media (max-width: 2559px) and (min-width: 1920px) {
+  .content {
+    gap: 60px;
+  }
+}
+
+/* 일반 데스크톱 (1441px - 1919px) */
+@media (max-width: 1919px) and (min-width: 1441px) {
+  .container {
+    padding: 0 120px;
+    height: 900px;
+  }
+  
+  .content {
+    gap: 50px;
+  }
+  
+  .reviewArea {
+    width: 650px;
+    height: 650px;
+  }
+  
+  .textArea {
+    width: 650px;
+    height: 650px;
+  }
+  
+  .mainTitle {
+    font-size: 52px;
+    width: 400px;
+  }
+}
+
+/* 작은 데스크톱 (1201px - 1440px) */
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .container {
+    padding: 0 80px;
+    height: 800px;
+  }
+  
+  .content {
+    gap: 40px;
+  }
+  
+  .reviewArea {
+    width: 550px;
+    height: 550px;
+    padding: 50px 0 30px;
+  }
+  
+  .textArea {
+    width: 550px;
+    height: 550px;
+    padding: 0 60px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+  }
+  
+  .mainTitle {
+    font-size: 48px;
+    width: 350px;
+  }
+  
+  .description {
+    font-size: 22px;
+  }
+  
+  .mockupImage {
+    width: 300px;
+    height: 494px;
+  }
+}
+
+/* 태블릿 가로 (901px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .container {
+    padding: 0 60px;
+    height: 700px;
+  }
+  
+  .content {
+    gap: 30px;
+  }
+  
+  .reviewArea {
+    width: 450px;
+    height: 450px;
+    padding: 40px 0 25px;
+  }
+  
+  .textArea {
+    width: 450px;
+    height: 450px;
+    padding: 0 40px;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+  }
+  
+  .mainTitle {
+    font-size: 40px;
+    width: 300px;
+  }
+  
+  .description {
+    font-size: 20px;
+  }
+  
+  .mockupImage {
+    width: 260px;
+    height: 428px;
+  }
+}
+
+/* 태블릿 세로 (769px - 900px) */
+@media (max-width: 900px) and (min-width: 769px) {
+  .container {
+    flex-direction: column;
+    padding: 40px 40px;
+    height: auto;
+    min-height: 800px;
+  }
+  
+  .content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .reviewArea {
+    width: 400px;
+    height: 400px;
+    padding: 30px 0 20px;
+  }
+  
+  .textArea {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 18px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+  
+  .mainTitle {
+    font-size: 36px;
+    width: auto;
+  }
+  
+  .description {
+    font-size: 18px;
+  }
+  
+  .mockupImage {
+    width: 220px;
+    height: 362px;
+  }
+}
+
+/* 모바일 가로 (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    flex-direction: column;
+    padding: 30px 30px;
+    height: auto;
+    min-height: 700px;
+  }
+  
+  .content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .reviewArea {
+    width: 350px;
+    height: 350px;
+    padding: 25px 0 15px;
+  }
+  
+  .textArea {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 16px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .mainTitle {
+    font-size: 28px;
+    width: auto;
+  }
+  
+  .description {
+    font-size: 16px;
+  }
+  
+  .mockupImage {
+    width: 180px;
+    height: 296px;
+  }
+}
+
+/* 모바일 세로 (320px - 480px) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 20px 20px;
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .content {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .reviewArea {
+    width: 280px;
+    height: 280px;
+    padding: 20px 0 10px;
+    border-radius: 50px;
+  }
+  
+  .textArea {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 14px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+  }
+  
+  .mainTitle {
+    font-size: 24px;
+    width: auto;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  
+  .mockupImage {
+    width: 150px;
+    height: 247px;
+  }
+}
+
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
+  .container {
+    padding: 15px 15px;
+    min-height: 500px;
+  }
+  
+  .reviewArea {
+    width: 250px;
+    height: 250px;
+    padding: 15px 0 8px;
+  }
+  
+  .textArea {
+    max-width: 280px;
+  }
+  
+  .sectionTitle {
+    font-size: 12px;
+  }
+  
+  .subtitle {
+    font-size: 10px;
+  }
+  
+  .mainTitle {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 12px;
+  }
+  
+  .mockupImage {
+    width: 130px;
+    height: 214px;
+  }
+}

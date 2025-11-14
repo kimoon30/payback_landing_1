@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 18px 0 0;
+  border-radius: 25px;
+}
+
+.text {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reviewContainer {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+}
+
+.arrowIcon {
+  width: 36px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.reviewText {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #1A1A1A;
+}
+
+/* 반응형 디자인 */
+/* 작은 데스크톱 (1201px - 1440px) */
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .text,
+  .reviewText {
+    font-size: 28px;
+  }
+  
+  .reviewContainer {
+    padding: 9px 18px;
+    gap: 7px;
+  }
+  
+  .arrowIcon {
+    width: 36px;
+    height: 38px;
+  }
+}
+
+/* 태블릿 가로 (901px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .text,
+  .reviewText {
+    font-size: 26px;
+  }
+  
+  .reviewContainer {
+    padding: 8px 17px;
+    gap: 6px;
+  }
+  
+  .arrowIcon {
+    width: 34px;
+    height: 36px;
+  }
+}
+
+/* 태블릿 세로 (769px - 900px) */
+@media (max-width: 900px) and (min-width: 769px) {
+  .text,
+  .reviewText {
+    font-size: 24px;
+  }
+  
+  .reviewContainer {
+    padding: 8px 16px;
+    gap: 6px;
+  }
+  
+  .arrowIcon {
+    width: 32px;
+    height: 34px;
+  }
+}
+
+/* 모바일 가로 (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .text,
+  .reviewText {
+    font-size: 22px;
+  }
+  
+  .reviewContainer {
+    padding: 8px 16px;
+    gap: 6px;
+  }
+  
+  .arrowIcon {
+    width: 30px;
+    height: 32px;
+  }
+}
+
+/* 모바일 세로 (320px - 480px) */
+@media (max-width: 480px) {
+  .text,
+  .reviewText {
+    font-size: 18px;
+  }
+  
+  .container {
+    gap: 12px;
+    padding: 0 16px 0 0;
+  }
+  
+  .reviewContainer {
+    padding: 6px 12px;
+    gap: 4px;
+  }
+  
+  .arrowIcon {
+    width: 24px;
+    height: 26px;
+  }
+}
+
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
+  .text,
+  .reviewText {
+    font-size: 16px;
+  }
+  
+  .container {
+    gap: 10px;
+    padding: 0 14px 0 0;
+  }
+  
+  .reviewContainer {
+    padding: 5px 10px;
+    gap: 3px;
+  }
+  
+  .arrowIcon {
+    width: 20px;
+    height: 22px;
+  }
+}

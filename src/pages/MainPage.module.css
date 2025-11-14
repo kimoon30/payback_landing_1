@@ -1,0 +1,358 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 80vh;
+  background-color: #FF6314;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.backgroundLine {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  min-width: 1920px;
+  height: 70vh;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 128px;
+  width: 1440.42px;
+  height: 874px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textSection {
+  flex: 0 0 auto;
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.badgeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mainTitle {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 800;
+  font-size: 110px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 631px;
+  height: 653px;
+}
+
+.imageContainer {
+  display: flex;
+  align-self: stretch;
+  gap: 10px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 631px;
+  height: 653px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* 반응형 디자인 */
+/* 초대형 화면 (2560px 이상) */
+@media (min-width: 2560px) {
+  .container {
+    height: 90vh;
+  }
+  .content {
+    gap: 150px;
+    width: 1600px;
+    height: 900px;
+  }
+  .backgroundLine {
+    height: 80vh;
+  }
+}
+
+/* 대형 화면 (1920px - 2559px) */
+@media (max-width: 2559px) and (min-width: 1920px) {
+  .container {
+    height: 85vh;
+  }
+  .content {
+    gap: 128px;
+    width: 1440px;
+    height: 874px;
+  }
+  .backgroundLine {
+    height: 75vh;
+  }
+}
+
+/* 일반 데스크톱 (1441px - 1919px) */
+@media (max-width: 1919px) and (min-width: 1441px) {
+  .container {
+    height: 80vh;
+  }
+  .content {
+    gap: 100px;
+    width: 1200px;
+    height: 700px;
+  }
+  .backgroundLine {
+    height: 70vh;
+  }
+}
+
+/* 작은 데스크톱 (1201px - 1440px) */
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .content {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+    padding: 60px 80px;
+    gap: 80px;
+    justify-content: center;
+  }
+  
+  .mainTitle {
+    font-size: 90px;
+  }
+  
+  .imageSection {
+    width: 500px;
+    height: 520px;
+  }
+  
+  .mainImage {
+    width: 500px;
+    height: 520px;
+  }
+}
+
+/* 태블릿 가로 (901px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .content {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+    padding: 50px 40px;
+    gap: 60px;
+    justify-content: center;
+  }
+  
+  .mainTitle {
+    font-size: 70px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+  }
+  
+  .imageSection {
+    width: 400px;
+    height: 420px;
+  }
+  
+  .mainImage {
+    width: 400px;
+    height: 420px;
+  }
+}
+
+/* 태블릿 세로 (769px - 900px) */
+@media (max-width: 900px) and (min-width: 769px) {
+  .content {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mainTitle {
+    font-size: 60px;
+  }
+  
+  .subtitle {
+    font-size: 17px;
+  }
+  
+  .imageSection {
+    width: 100%;
+    max-width: 450px;
+    height: 380px;
+    margin: 0 auto;
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: 380px;
+  }
+}
+
+/* 모바일 가로 (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .content {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mainTitle {
+    font-size: 50px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+  
+  .imageSection {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* 모바일 세로 (320px - 480px) */
+@media (max-width: 480px) {
+  .content {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px 16px;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mainTitle {
+    font-size: 36px;
+    line-height: 1.1em;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  
+  .imageSection {
+    width: 100%;
+    max-width: 280px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
+  .content {
+    padding: 15px 12px;
+    gap: 25px;
+  }
+  
+  .mainTitle {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+  }
+  
+  .imageSection {
+    max-width: 250px;
+    height: 220px;
+  }
+  
+  .mainImage {
+    height: 220px;
+  }
+}

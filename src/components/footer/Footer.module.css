@@ -1,0 +1,410 @@
+.container {
+  width: 100%;
+  height: 254px;
+  background-color: #F2F2F2;
+  border-top: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 320px 0px;
+  box-sizing: border-box;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 800px;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 780px;
+}
+
+.companyName {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375em;
+  color: #222222;
+  margin: 0;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.label {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: #222222;
+  white-space: nowrap;
+}
+
+.value {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: #616161;
+  white-space: nowrap;
+}
+
+.copyright {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: #9E9E9E;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  width: 600px;
+}
+
+.contactHeading {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.222em;
+  text-align: right;
+  color: #222222;
+  margin: 0;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 6px;
+  width: 600px;
+}
+
+.email {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: #757575;
+}
+
+.hours {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: #757575;
+}
+
+/* 반응형 디자인 */
+/* 초대형 화면 (2560px 이상) */
+@media (min-width: 2560px) {
+  .container {
+    padding: 40px 400px 0px;
+    height: 280px;
+  }
+  
+  .companyName {
+    font-size: 18px;
+  }
+  
+  .contactHeading {
+    font-size: 20px;
+  }
+  
+  .label, .value, .copyright, .email, .hours {
+    font-size: 16px;
+  }
+}
+
+/* 대형 화면 (1920px - 2559px) */
+@media (max-width: 2559px) and (min-width: 1920px) {
+  .container {
+    padding: 34px 320px 0px;
+  }
+}
+
+/* 일반 데스크톱 (1441px - 1919px) */
+@media (max-width: 1919px) and (min-width: 1441px) {
+  .container {
+    padding: 30px 250px 0px;
+    height: 230px;
+  }
+  
+  .leftSection {
+    width: 320px;
+  }
+  
+  .companyInfo {
+    width: 300px;
+  }
+  
+  .contactTitle, .contactDetails {
+    width: 200px;
+  }
+}
+
+/* 작은 데스크톱 (1201px - 1440px) */
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .container {
+    padding: 25px 200px 0px;
+    height: 210px;
+  }
+  
+  .leftSection {
+    width: 280px;
+  }
+  
+  .companyInfo {
+    width: 260px;
+  }
+  
+  .companyName {
+    font-size: 15px;
+  }
+  
+  .contactHeading {
+    font-size: 16px;
+  }
+  
+  .label, .value, .copyright, .email, .hours {
+    font-size: 13px;
+  }
+  
+  .contactTitle, .contactDetails {
+    width: 180px;
+  }
+}
+
+/* 태블릿 가로 (901px - 1200px) */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .container {
+    padding: 20px 120px 0px;
+    height: 190px;
+  }
+  
+  .leftSection {
+    width: 250px;
+  }
+  
+  .companyInfo {
+    width: 230px;
+  }
+  
+  .companyName {
+    font-size: 14px;
+  }
+  
+  .contactHeading {
+    font-size: 15px;
+  }
+  
+  .label, .value, .copyright, .email, .hours {
+    font-size: 12px;
+  }
+  
+  .contactTitle, .contactDetails {
+    width: 160px;
+  }
+}
+
+/* 태블릿 세로 (769px - 900px) */
+@media (max-width: 900px) and (min-width: 769px) {
+  .container {
+    flex-direction: column;
+    padding: 20px 60px;
+    height: auto;
+    min-height: 200px;
+    gap: 20px;
+  }
+  
+  .leftSection {
+    width: 100%;
+  }
+  
+  .companyInfo {
+    width: 100%;
+  }
+  
+  .rightSection {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .contactTitle, .contactDetails {
+    width: 100%;
+    align-items: flex-start;
+  }
+  
+  .contactHeading {
+    text-align: left;
+  }
+}
+
+/* 모바일 가로 (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    flex-direction: column;
+    padding: 18px 40px;
+    height: auto;
+    min-height: 180px;
+    gap: 18px;
+  }
+  
+  .leftSection {
+    width: 100%;
+  }
+  
+  .companyInfo {
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .companyName {
+    font-size: 13px;
+  }
+  
+  .contactHeading {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .label, .value, .copyright, .email, .hours {
+    font-size: 11px;
+  }
+  
+  .rightSection {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .contactTitle, .contactDetails {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+/* 모바일 세로 (320px - 480px) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 15px 25px;
+    height: auto;
+    min-height: 160px;
+    gap: 15px;
+  }
+  
+  .leftSection {
+    width: 100%;
+  }
+  
+  .companyInfo {
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .infoList {
+    gap: 6px;
+  }
+  
+  .infoItem {
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .companyName {
+    font-size: 12px;
+  }
+  
+  .contactHeading {
+    font-size: 13px;
+    text-align: left;
+  }
+  
+  .label, .value, .copyright, .email, .hours {
+    font-size: 10px;
+    line-height: 1.4em;
+  }
+  
+  .rightSection {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .contactInfo {
+    gap: 15px;
+  }
+  
+  .contactTitle, .contactDetails {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
+  .container {
+    padding: 12px 20px;
+    min-height: 140px;
+    gap: 12px;
+  }
+  
+  .companyInfo {
+    gap: 8px;
+  }
+  
+  .infoList {
+    gap: 4px;
+  }
+  
+  .companyName {
+    font-size: 11px;
+  }
+  
+  .contactHeading {
+    font-size: 12px;
+  }
+  
+  .label, .value, .copyright, .email, .hours {
+    font-size: 9px;
+  }
+  
+  .contactInfo {
+    gap: 12px;
+  }
+  
+  .contactDetails {
+    gap: 4px;
+  }
+}
