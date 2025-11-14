@@ -86,7 +86,7 @@
   align-items: center;
   padding: 120px 320px;
   box-sizing: border-box;
-  min-height: 1080px;
+  min-height: auto;
 }
 
 .downloadContent {
@@ -580,7 +580,7 @@
 /* 모바일 가로 (481px - 768px) */
 @media (max-width: 768px) and (min-width: 481px) {
   .referenceSection {
-    padding: 40px 30px;
+    padding: 45px 30px;
   }
   
   .textArea {
@@ -589,11 +589,13 @@
   }
   
   .title {
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 1.3em;
   }
   
   .description {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.4em;
   }
   
   .brandLogosImage {
@@ -603,34 +605,155 @@
   }
   
   .downloadSection {
-    padding: 40px 40px;
+    padding: 45px 30px;
+    min-height: auto;
+  }
+  
+  .downloadContent {
+    gap: 35px;
+  }
+  
+  .downloadTextArea {
+    gap: 24px;
   }
   
   .phoneContainer {
     flex-direction: column;
-    gap: 15px;
+    gap: 24px;
     padding: 0;
+    align-items: center;
   }
   
   .phoneMockup {
     position: relative;
     left: 0;
     top: 0;
-    width: 160px;
-    height: 141px;
+    width: 180px;
+    height: 158px;
+  }
+  
+  .downloadTitle {
+    font-size: 28px;
+    line-height: 1.2em;
+  }
+  
+  .downloadSubtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .appCard {
+    padding: 35px 30px;
+    gap: 20px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .appName {
+    font-size: 24px;
+  }
+  
+  .appIconImage {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .downloadButtons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .downloadButton {
+    padding: 14px 24px;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .downloadButton span {
+    font-size: 14px;
+  }
+  
+  .consultButton {
+    font-size: 22px;
+    padding: 18px 14px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/* 모바일 세로 (320px - 480px) */
+@media (max-width: 480px) {
+  .referenceSection {
+    padding: 40px 20px;
+  }
+  
+  .textArea {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .title {
+    font-size: 28px;
+    line-height: 1.3em;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  
+  .brandLogosImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .downloadSection {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+  
+  .downloadContent {
+    gap: 30px;
+  }
+  
+  .downloadTextArea {
+    gap: 20px;
+  }
+  
+  .phoneContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .phoneMockup {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 140px;
+    height: 123px;
   }
   
   .downloadTitle {
     font-size: 24px;
+    line-height: 1.2em;
   }
   
   .downloadSubtitle {
-    font-size: 12px;
+    font-size: 14px;
+    text-align: center;
   }
   
   .appCard {
     padding: 30px 25px;
     gap: 16px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 280px;
   }
   
   .appName {
@@ -644,33 +767,36 @@
   
   .downloadButtons {
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    width: 100%;
   }
   
   .downloadButton {
-    padding: 10px 20px;
-    width: 120px;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 160px;
   }
   
   .downloadButton span {
-    font-size: 11px;
+    font-size: 12px;
   }
   
   .consultButton {
-    font-size: 20px;
+    font-size: 18px;
     padding: 16px 12px;
+    max-width: 280px;
+    margin: 0 auto;
   }
 }
 
-/* 모바일 세로 (320px - 480px) */
-@media (max-width: 480px) {
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
   .referenceSection {
-    padding: 30px 20px;
+    padding: 35px 15px;
   }
   
   .textArea {
-    width: 100%;
-    max-width: 320px;
+    max-width: 280px;
   }
   
   .title {
@@ -684,19 +810,27 @@
   }
   
   .brandLogosImage {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 290px;
   }
   
   .downloadSection {
-    padding: 30px 25px;
+    padding: 35px 16px;
+    min-height: auto;
+  }
+  
+  .downloadContent {
+    gap: 25px;
+  }
+  
+  .downloadTextArea {
+    gap: 16px;
   }
   
   .phoneContainer {
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     padding: 0;
+    align-items: center;
   }
   
   .phoneMockup {
@@ -709,19 +843,24 @@
   
   .downloadTitle {
     font-size: 20px;
+    line-height: 1.2em;
   }
   
   .downloadSubtitle {
-    font-size: 10px;
+    font-size: 12px;
+    text-align: center;
   }
   
   .appCard {
     padding: 25px 20px;
     gap: 12px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 260px;
   }
   
   .appName {
-    font-size: 16px;
+    font-size: 18px;
   }
   
   .appIconImage {
@@ -731,88 +870,24 @@
   
   .downloadButtons {
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
+    width: 100%;
   }
   
   .downloadButton {
-    padding: 8px 16px;
-    width: 100px;
+    padding: 10px 16px;
+    width: 100%;
+    max-width: 140px;
   }
   
   .downloadButton span {
-    font-size: 9px;
+    font-size: 10px;
   }
   
   .consultButton {
     font-size: 16px;
     padding: 14px 10px;
-  }
-}
-
-/* 초소형 모바일 (320px 이하) */
-@media (max-width: 320px) {
-  .referenceSection {
-    padding: 25px 15px;
-  }
-  
-  .textArea {
-    max-width: 280px;
-  }
-  
-  .title {
-    font-size: 20px;
-  }
-  
-  .description {
-    font-size: 11px;
-  }
-  
-  .brandLogosImage {
-    max-width: 290px;
-  }
-  
-  .downloadSection {
-    padding: 25px 20px;
-  }
-  
-  .phoneMockup {
-    width: 100px;
-    height: 88px;
-  }
-  
-  .downloadTitle {
-    font-size: 18px;
-  }
-  
-  .downloadSubtitle {
-    font-size: 9px;
-  }
-  
-  .appCard {
-    padding: 20px 15px;
-    gap: 10px;
-  }
-  
-  .appName {
-    font-size: 14px;
-  }
-  
-  .appIconImage {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .downloadButton {
-    padding: 6px 12px;
-    width: 80px;
-  }
-  
-  .downloadButton span {
-    font-size: 8px;
-  }
-  
-  .consultButton {
-    font-size: 14px;
-    padding: 12px 8px;
+    max-width: 260px;
+    margin: 0 auto;
   }
 }

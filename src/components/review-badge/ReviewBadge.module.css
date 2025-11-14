@@ -116,12 +116,39 @@
 @media (max-width: 480px) {
   .text,
   .reviewText {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.2em;
   }
   
   .container {
-    gap: 12px;
-    padding: 0 16px 0 0;
+    gap: 10px;
+    padding: 0 14px 0 0;
+    justify-content: center;
+  }
+  
+  .reviewContainer {
+    padding: 8px 14px;
+    gap: 6px;
+  }
+  
+  .arrowIcon {
+    width: 28px;
+    height: 30px;
+  }
+}
+
+/* 초소형 모바일 (320px 이하) */
+@media (max-width: 320px) {
+  .text,
+  .reviewText {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+  
+  .container {
+    gap: 8px;
+    padding: 0 12px 0 0;
+    justify-content: center;
   }
   
   .reviewContainer {
@@ -132,28 +159,5 @@
   .arrowIcon {
     width: 24px;
     height: 26px;
-  }
-}
-
-/* 초소형 모바일 (320px 이하) */
-@media (max-width: 320px) {
-  .text,
-  .reviewText {
-    font-size: 16px;
-  }
-  
-  .container {
-    gap: 10px;
-    padding: 0 14px 0 0;
-  }
-  
-  .reviewContainer {
-    padding: 5px 10px;
-    gap: 3px;
-  }
-  
-  .arrowIcon {
-    width: 20px;
-    height: 22px;
   }
 }

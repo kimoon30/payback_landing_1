@@ -138,22 +138,24 @@
 @media (max-width: 480px) {
   .text,
   .productText {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.2em;
   }
   
   .container {
-    gap: 12px;
+    gap: 10px;
+    justify-content: center;
   }
   
   .productContainer {
-    height: 36px;
-    padding: 0 10px;
-    gap: 6px;
+    height: 40px;
+    padding: 0 12px;
+    gap: 8px;
   }
   
   .productImage {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
   
   .indicator {
@@ -166,22 +168,24 @@
 @media (max-width: 320px) {
   .text,
   .productText {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.2em;
   }
   
   .container {
-    gap: 10px;
+    gap: 8px;
+    justify-content: center;
   }
   
   .productContainer {
-    height: 32px;
-    padding: 0 8px;
-    gap: 5px;
+    height: 36px;
+    padding: 0 10px;
+    gap: 6px;
   }
   
   .productImage {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
   }
   
   .indicator {

@@ -69,18 +69,21 @@
 /* 모바일 세로 (320px - 480px) */
 @media (max-width: 480px) {
   .button {
-    padding: 20px 16px;
-    font-size: 22px;
+    padding: 18px 20px;
+    font-size: 20px;
     max-width: 280px;
     margin: 0 auto;
+    border-radius: 10px;
   }
 }
 
 /* 초소형 모바일 (320px 이하) */
 @media (max-width: 320px) {
   .button {
-    padding: 18px 14px;
-    font-size: 20px;
-    max-width: 250px;
+    padding: 16px 18px;
+    font-size: 18px;
+    max-width: 260px;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 }
